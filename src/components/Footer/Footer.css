@@ -1,0 +1,34 @@
+.footer{
+    padding: 5vh;
+    background-color: pink;
+
+}
+.foot-container .foot-socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.foot-socials a{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    /* width:30px; */
+    /* height:30px */
+}
+.foot-socials .social{
+    width:30px;
+    height: 30px;
+
+}
+
+.foot-lists{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding: 20px;
+}

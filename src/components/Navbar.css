@@ -1,0 +1,131 @@
+.navbar {
+    padding: 20px;
+    background-color: pink;
+    position: sticky;
+    
+    top:0;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(40, 40, 40, 0.2), 0 6px 20px 0 rgba(83, 83, 83, 0.19);
+}
+/* .nav{
+    position: relative;
+} */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vh;
+}
+.nav-left{
+    font-size: 25px;;
+    font-weight: bold;
+}
+.nav-right{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:60px;
+    font-size: 20px;
+    font-weight: bold;
+   ;
+    
+}
+
+/* .nav-container div.open{
+    display: flex;
+}  */
+
+.nav-container  li
+{
+    display: block;
+    text-decoration: none;
+    color:black;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.active{
+    background-color: rgb(162, 162, 243);
+    
+}
+.nav-right li:not(.active):hover{
+    background-color: aqua;
+}
+
+.navbar .menu{
+    display: none;
+    position:absolute;
+    top:1.2rem;
+    right: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height:2rem;
+    
+}
+.navbar .menu span{
+    height: 0.4rem;
+    width:100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+
+
+@media (min-width:500px) and (max-width:900px) {
+    
+    .nav-container{
+        padding: 0 5vh;
+    }
+
+    .nav-container .nav-right{
+        font-size: 15px;
+    }
+    .nav-left{
+        font-size:20px
+    }
+    .nav-right{
+        gap:15px
+    }
+}
+
+
+@media (max-width:699px) {
+    .navbar{
+        padding: 10px 20px;
+    }
+    .nav-left{
+        padding: 0;
+    }
+    .navbar .menu{
+        display: flex;
+        /* padding: 0px; */
+    }
+    .nav-container{
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        /* justify-items: center; */
+        padding: 0px;
+    }
+    .navbar .nav-right{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+        gap:10px;
+    }
+    .nav-container div.open{
+        display: flex;
+    }
+
+    .nav-container li{
+        width: 100%;
+        text-align: center;
+    }
+    .nav-container li a{
+         margin:0.2rem 0.5rem ;
+    }
+}

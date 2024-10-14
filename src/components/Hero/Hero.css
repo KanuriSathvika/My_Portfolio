@@ -1,0 +1,121 @@
+.hero{
+    padding: 10vh;
+    /* background-color: rgb(236, 234, 234); */
+    background-color: #fff4f4
+}
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-left{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    /* align-items: start; */
+    /* justify-content: center; */
+}
+.hero-left h3 span{
+    font-size: 30px;
+    color: rgb(33, 33, 56);
+}
+.hero-left p{
+    line-height: 1.8;
+    line-break:auto;
+    font-size: 17px;
+    color: rgb(55, 55, 55);
+}
+
+.hero-left .hero-socials{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap:10px
+}
+.hero-socials .social{
+    height:30px;
+    width:30px;
+    /* padding: 0.1rem */
+    
+}
+.hero-socials a{
+    height:40px;
+    width:40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 4px;
+    color: rgb(55, 55, 55);
+}
+
+
+.hero-btn{
+    margin-top: 20px;
+}
+.hero-left .hero-btn a{
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s ease-in;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* margin-top: 20px; */
+}
+.hero-btn a:hover{
+    background-color: pink;
+    /* transform:translateX(20px); */
+}
+
+
+.hero-right img{
+    border-radius: 20px;
+}
+
+@media (min-width:500px) and (max-width:900px) {
+    .hero{
+        padding: 5vh 8vh;
+    }
+    .hero-left{
+        width: 70%;
+    }
+    .hero-right{
+        width:50%
+    }
+    .hero-right img{
+        width:99%
+    }
+}
+
+
+@media (max-width:500px) {
+    .hero-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        gap:20px;
+    }
+    .hero-left{
+        width: 100%;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .hero-left p{
+        text-align: center;
+        
+    }
+
+    .hero-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-right img{
+        width:80%
+    }
+}

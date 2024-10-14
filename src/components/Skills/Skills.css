@@ -1,0 +1,129 @@
+.skills{
+    padding: 10vh;
+    /* background-color: #fff4f4 */
+    /* overflow: hidden; */
+}
+.skills h1{
+    text-align: center;
+}
+.skills-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    width:100%;
+    padding:8vh  5vh;
+}
+.skills-container .skill-left{
+    width:50%;
+}
+.skills-container .skill-right{
+    width:50%;
+}
+.skill-info{
+    padding: 20px;
+}
+.skill-info .skill-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    /* width:90%; */
+    /* width:80%; */
+}
+.skill-text div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.skill-percent{
+    text-align: right;
+}
+.skill-bar{
+    width:90%;
+    background-color: rgb(213, 213, 213);
+    height:20px;
+    border-radius: 20px;
+}
+
+.skill-bar div{
+    /* width:90%; */
+    background-color:rgb(215, 163, 239);
+    /* background-color: rgb(155, 14, 14); */
+    /* background-image: linear-gradient(to-right,pink,blue); */
+    height:20px;
+    border-radius: 20px;
+}
+.skill-text-html{
+    width:80%;
+}
+.bar-html{
+    width: 90%;
+}
+
+.skill-text-css{
+    width:80%;
+}
+.bar-css{
+    width:90%;
+}
+
+.skill-text-js{
+    width:65%;
+}
+.bar-js{
+    width:75%;
+}
+.skill-text-tailcss{
+    width:70%;
+}
+.bar-tailcss{
+    width:80%;
+}
+.skill-text-react{
+    width:65%
+}
+.bar-react{
+    width:75%;
+}
+
+.skill-text-c{
+    width:69%;
+}
+.bar-c{
+    width:79%
+}
+
+.skill-text-java{
+    width:85%;
+}
+.bar-java{
+    width:95%
+}
+.skill-text-py{
+    width:72%;
+}
+.bar-py{
+    width:82%
+}
+
+.skill-text-sql{
+    width:65%;
+}
+.bar-sql{
+    width:75%
+}
+
+
+@media (max-width:699px) {
+    .skills{
+        padding: 5vh 30px;
+    }
+    .skills-container{
+        flex-direction: column;
+        padding: 2vh 20px;
+    }
+    .skills-container .skill-left,.skills-container .skill-right{
+        width:100%;
+    }
+}
