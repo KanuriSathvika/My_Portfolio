@@ -24,9 +24,7 @@ const Hero = ({her}) => {
                 
             </div>
             <div className='hero-btn'>
-              <a href="https://drive.google.com/file/d/1gpKXwoJp6iOWLjvLpAKdLs07wX6UIeI9/view?usp=drive_link">Resume</a>
-                
-                
+              <a href="https://drive.google.com/file/d/1gpKXwoJp6iOWLjvLpAKdLs07wX6UIeI9/view?usp=drive_link">Resume</a>    
             </div>
         </div>
         <div></div>
