@@ -3,10 +3,11 @@ import './Hero.css'
 import hero_pic from '../../assets/my_AI_pic2.png'
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin,FaInstagram } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
 
 const Hero = ({her}) => {
+  
   return (
     <div  ref={her}
     className='hero '>
@@ -23,7 +24,8 @@ const Hero = ({her}) => {
                 
             </div>
             <div className='hero-btn'>
-                <Link >Resume</Link>
+              <a href="https://drive.google.com/file/d/1gpKXwoJp6iOWLjvLpAKdLs07wX6UIeI9/view?usp=drive_link">Resume</a>
+                
                 
             </div>
         </div>

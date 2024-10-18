@@ -1,15 +1,16 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar.jsx'
-import Footer from './components/Footer/Footer.jsx'
+import { Routes,Route, BrowserRouter } from 'react-router-dom'
+import Home from './components/Home.jsx'
+import Resume from './components/Resume/Resume.jsx'
 
 function App() {
 
 
   return (
     <div>
-      <Navbar/>
-      <Footer/>
+      
+      <Home/>
     </div>
   )
 }
